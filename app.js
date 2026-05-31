@@ -519,24 +519,254 @@ const modules = [
       }
     }
   ]
-},
-  {
-    id: "103",
-    title: "103 — Medical Assessment Fundamentals",
-    level: "Fundamentals",
-    youtube: "https://www.youtube.com/embed/5g0Qv0pZxVQ",
-    description:
-      "Covers patient rights, communication, SOAP notes, history taking (including OLDCARTS and ROS), and screening.",
-    sections: [
-      {
-        heading: "Overview",
-        html: `
-          <p>This module covers the basics of patient assessment, including history taking, communication, and documentation using SOAP format.</p>
-          <p>Content placeholder — expand with PQS-aligned details for 103.1–103.9.</p>
-        `
+},{
+  id: "103",
+  title: "103 — Medical Assessment Fundamentals",
+  level: "Fundamentals",
+  youtube: "", // intentionally left blank
+  description:
+    "Covers patient rights and responsibilities, communication, standbys, SOAP notes, history taking (including OLDCARTS and ROS), pain description, and screening procedures.",
+  sections: [
+    {
+      heading: "Overview & Learning Objectives",
+      html: `
+        <p>By the end of this module, you will be able to:</p>
+        <ul>
+          <li>Describe basic patient rights and responsibilities.</li>
+          <li>Explain effective verbal and non-verbal communication with patients.</li>
+          <li>State the purpose of standbys during medical examinations.</li>
+          <li>Describe the components of a SOAP note.</li>
+          <li>Identify key elements of patient history, including ROS.</li>
+          <li>Use OLDCARTS to structure a History of Present Illness (HPI).</li>
+          <li>Define terms related to HPI and pain description.</li>
+          <li>Discuss basic screening procedures for medical appointments.</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Patient Rights and Responsibilities",
+      html: `
+        <span class="badge">PQS 103.1</span>
+        <p>Patients have specific rights and responsibilities in the military health system.</p>
+        <h4>Common Patient Rights:</h4>
+        <ul>
+          <li>Right to respectful, considerate care.</li>
+          <li>Right to receive understandable information about diagnosis and treatment.</li>
+          <li>Right to privacy and confidentiality.</li>
+          <li>Right to participate in decisions about care.</li>
+          <li>Right to know the identity and role of healthcare personnel.</li>
+        </ul>
+        <h4>Common Patient Responsibilities:</h4>
+        <ul>
+          <li>Provide accurate and complete health information.</li>
+          <li>Follow the treatment plan as agreed upon.</li>
+          <li>Show respect to staff and other patients.</li>
+          <li>Keep appointments or notify if unable to do so.</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Patient Communication",
+      html: `
+        <span class="badge">PQS 103.2</span>
+        <p>Effective communication builds trust and improves care.</p>
+        <h4>Verbal Communication:</h4>
+        <ul>
+          <li>Use clear, simple language.</li>
+          <li>Confirm understanding by asking the patient to repeat key points.</li>
+          <li>Avoid jargon when possible.</li>
+        </ul>
+        <h4>Non-Verbal Communication:</h4>
+        <ul>
+          <li>Maintain appropriate eye contact.</li>
+          <li>Use open body posture.</li>
+          <li>Be aware of facial expressions and tone.</li>
+        </ul>
+        <h4>Contact Point:</h4>
+        <p>The corpsman is often the first and main contact point for the patient, setting the tone for the entire encounter.</p>
+      `
+    },
+
+    {
+      heading: "Standbys During Medical Examinations",
+      html: `
+        <span class="badge">PQS 103.3</span>
+        <p>A standby is an additional person present during certain medical examinations.</p>
+        <h4>Purpose of Standbys:</h4>
+        <ul>
+          <li>Protect the patient’s dignity and comfort.</li>
+          <li>Provide a witness for sensitive exams.</li>
+          <li>Support safety and professionalism.</li>
+        </ul>
+        <p>Standbys are especially important during examinations of sensitive areas or when gender differences may cause discomfort.</p>
+      `
+    },
+
+    {
+      heading: "SOAP Note Components",
+      html: `
+        <span class="badge">PQS 103.4</span>
+        <p>The SOAP format is a standard way to document patient encounters.</p>
+        <ul>
+          <li><strong>S — Subjective:</strong> What the patient reports (chief complaint, HPI, ROS).</li>
+          <li><strong>O — Objective:</strong> Measurable findings (vital signs, physical exam, labs).</li>
+          <li><strong>A — Assessment:</strong> Provider’s impression or diagnosis.</li>
+          <li><strong>P — Plan:</strong> Treatment, tests, follow-up, patient education.</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Patient History & Review of Systems (ROS)",
+      html: `
+        <span class="badge">PQS 103.5</span>
+        <p>Patient history provides context for current complaints and overall health.</p>
+        <h4>Key Components:</h4>
+        <ul>
+          <li><strong>Last menstrual period (LMP):</strong> Important for female patients of reproductive age.</li>
+          <li><strong>Past medical history:</strong> Chronic illnesses, hospitalizations.</li>
+          <li><strong>Past surgical history:</strong> Surgeries and dates.</li>
+          <li><strong>Allergies:</strong> Medications, foods, environmental; include reactions.</li>
+          <li><strong>Medications:</strong> Name, dose, frequency, over-the-counter and supplements.</li>
+          <li><strong>Family history:</strong> Major illnesses in close relatives.</li>
+          <li><strong>Social history:</strong> Tobacco, alcohol, drugs, occupation, living situation.</li>
+          <li><strong>Review of Systems (ROS):</strong> Systematic review of symptoms by body system.</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "History of Present Illness (HPI) and OLDCARTS",
+      html: `
+        <span class="badge">PQS 103.6–103.7</span>
+        <p>The HPI describes the story of the patient’s current problem.</p>
+        <h4>OLDCARTS (Common HPI Framework):</h4>
+        <ul>
+          <li><strong>O — Onset:</strong> When did it start?</li>
+          <li><strong>L — Location:</strong> Where is it?</li>
+          <li><strong>D — Duration:</strong> How long has it been present?</li>
+          <li><strong>C — Character:</strong> What does it feel like (sharp, dull, burning)?</li>
+          <li><strong>A — Aggravating factors:</strong> What makes it worse?</li>
+          <li><strong>R — Relieving factors:</strong> What makes it better?</li>
+          <li><strong>T — Timing:</strong> Constant or intermittent? Better/worse at certain times?</li>
+          <li><strong>S — Severity:</strong> How bad is it (often 0–10 scale)?</li>
+        </ul>
+        <h4>Other HPI Concepts:</h4>
+        <ul>
+          <li><strong>Description of complaint:</strong> Patient’s own words.</li>
+          <li><strong>Chronology of events:</strong> Sequence of symptoms and actions taken.</li>
+          <li><strong>Review patient charts:</strong> Check prior visits, labs, imaging.</li>
+          <li><strong>Pertinent positives:</strong> Symptoms that support a possible diagnosis.</li>
+          <li><strong>Pertinent negatives:</strong> Expected symptoms that are absent and help rule out conditions.</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Describing Pain",
+      html: `
+        <span class="badge">PQS 103.8</span>
+        <p>Pain is often described using structured terms.</p>
+        <ul>
+          <li><strong>Onset:</strong> When the pain started.</li>
+          <li><strong>Provocation/Palliation:</strong> What makes it worse or better.</li>
+          <li><strong>Quality:</strong> Type of pain (sharp, dull, throbbing, burning).</li>
+          <li><strong>Radiates:</strong> Does the pain move or travel to other areas?</li>
+          <li><strong>Severity:</strong> Intensity, often rated 0–10.</li>
+          <li><strong>Timing:</strong> Constant, intermittent, or related to specific activities.</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Screening Procedures for Medical Appointments",
+      html: `
+        <span class="badge">PQS 103.9</span>
+        <p>Screening helps prioritize care and ensure safety.</p>
+        <h4>Common Screening Steps:</h4>
+        <ul>
+          <li>Verify patient identity (two identifiers).</li>
+          <li>Obtain chief complaint.</li>
+          <li>Take vital signs (as required by clinic protocol).</li>
+          <li>Ask brief, focused questions related to the complaint.</li>
+          <li>Identify red flags (chest pain, shortness of breath, severe pain, suicidal ideation).</li>
+          <li>Document findings clearly and promptly.</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Mini-Scenarios",
+      html: `
+        <div class="scenario">
+          <div class="scenario-title">Scenario 1 — Incomplete HPI</div>
+          <p class="scenario-question">A patient says, "My chest hurts." You only document "chest pain" and move on. What key information are you missing?</p>
+          <p class="scenario-answer"><strong>Answer:</strong> OLDCARTS details such as onset, location, duration, character, aggravating/relieving factors, timing, and severity.</p>
+        </div>
+        <div class="scenario">
+          <div class="scenario-title">Scenario 2 — Non-Verbal Cues</div>
+          <p class="scenario-question">A patient says they are "fine," but avoids eye contact and appears tense. What should you do?</p>
+          <p class="scenario-answer"><strong>Answer:</strong> Recognize the non-verbal cues, ask open-ended questions, and gently explore concerns to build trust.</p>
+        </div>
+        <div class="scenario">
+          <div class="scenario-title">Scenario 3 — Red Flag During Screening</div>
+          <p class="scenario-question">During screening, a patient with abdominal pain reports sudden, severe pain and appears pale and diaphoretic. What is your priority?</p>
+          <p class="scenario-answer"><strong>Answer:</strong> Recognize this as a potential emergency, notify a provider immediately, and follow clinic protocols for urgent evaluation.</p>
+        </div>
+      `
+    },
+
+    {
+      heading: "End-of-Block Quiz",
+      quiz: {
+        questions: [
+          {
+            text: "Which of the following is part of the patient's rights?",
+            options: [
+              "Guarantee of a specific diagnosis",
+              "Right to respectful and considerate care",
+              "Right to refuse to provide any information",
+              "Right to demand any medication"
+            ],
+            correctIndex: 1
+          },
+          {
+            text: "Which component of SOAP contains the patient’s chief complaint and HPI?",
+            options: ["Subjective", "Objective", "Assessment", "Plan"],
+            correctIndex: 0
+          },
+          {
+            text: "In OLDCARTS, the letter 'C' stands for:",
+            options: ["Cause", "Character", "Chronicity", "Course"],
+            correctIndex: 1
+          },
+          {
+            text: "Which of the following is a 'pertinent negative'?",
+            options: [
+              "Patient reports chest pain and shortness of breath",
+              "Patient denies shortness of breath with chest pain",
+              "Patient reports fever and chills",
+              "Patient reports nausea and vomiting"
+            ],
+            correctIndex: 1
+          },
+          {
+            text: "Which is an example of non-verbal communication?",
+            options: [
+              "Explaining the procedure",
+              "Writing in the chart",
+              "Maintaining appropriate eye contact",
+              "Asking closed-ended questions"
+            ],
+            correctIndex: 2
+          }
+        ]
       }
-    ]
-  },
+    }
+  ]
+},
   {
     id: "104",
     title: "104 — Military Medical Examinations Fundamentals",
