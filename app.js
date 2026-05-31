@@ -259,23 +259,267 @@ const modules = [
   },
 
   // ---- STUB MODULES (you can expand content similarly to 101) ----
-  {
-    id: "102",
-    title: "102 — Healthcare Administration Fundamentals",
-    level: "Fundamentals",
-    youtube: "https://www.youtube.com/embed/5c8v4a2Gv0c", // example admin/records video
-    description:
-      "Covers health records, TDFS, privacy, electronic health systems, and physical exam documentation.",
-    sections: [
-      {
-        heading: "Overview",
-        html: `
-          <p>This module introduces healthcare administration concepts such as health record structure, filing systems, privacy, and basic electronic medical record functions.</p>
-          <p>Content placeholder — expand with PQS-aligned details for 102.1–102.16.</p>
-        `
+{
+  id: "102",
+  title: "102 — Healthcare Administration Fundamentals",
+  level: "Fundamentals",
+  youtube: "https://www.youtube.com/embed/2aQwKxJ8Q2s", 
+  description:
+    "Covers health records, TDFS, privacy, electronic health systems, documentation standards, and physical exam administrative requirements.",
+  sections: [
+    {
+      heading: "Overview & Learning Objectives",
+      html: `
+        <p>By the end of this module, you will be able to:</p>
+        <ul>
+          <li>Explain the Terminal Digit Filing System (TDFS).</li>
+          <li>Describe the annual verification process for health records.</li>
+          <li>Identify the components of the Military Health Treatment Record Jacket.</li>
+          <li>Define key patient privacy terms including HIPAA and PII.</li>
+          <li>Explain the purpose and required fields of common medical forms.</li>
+          <li>Describe the purpose of each part of the health record.</li>
+          <li>Explain criteria for closing a health record.</li>
+          <li>Understand basic functions of AHLTA/CHCS.</li>
+          <li>Explain the purpose of physical examinations and qualifying exams.</li>
+          <li>Discuss healthcare systems used at your command.</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Terminal Digit Filing System (TDFS)",
+      html: `
+        <span class="badge">PQS 102.1</span>
+        <p>The Terminal Digit Filing System (TDFS) organizes medical records using the last two digits of the sponsor’s SSN.</p>
+        <ul>
+          <li><strong>Primary number:</strong> Last two digits (00–99)</li>
+          <li><strong>Secondary number:</strong> Middle two digits</li>
+          <li><strong>Tertiary number:</strong> First five digits</li>
+        </ul>
+        <p>This system evenly distributes records and prevents overcrowding in any one section.</p>
+
+        <div class="youtube-wrapper">
+          <iframe src="https://www.youtube.com/embed/1t5xRk5vZpE" allowfullscreen></iframe>
+        </div>
+      `
+    },
+
+    {
+      heading: "Annual Verification of Health Records",
+      html: `
+        <span class="badge">PQS 102.2</span>
+        <p>Health records must be verified annually to ensure accuracy and completeness.</p>
+        <h4>Verification includes:</h4>
+        <ul>
+          <li>Correct patient identification data</li>
+          <li>Presence of required forms</li>
+          <li>Updated immunizations</li>
+          <li>Review of allergies and medications</li>
+          <li>Ensuring privacy forms (DD 2005) are present</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Military Health Treatment Record Jacket Components",
+      html: `
+        <span class="badge">PQS 102.3</span>
+        <p>The Military Health Treatment Record Jacket (NAVMED 6150/10–19) contains key administrative and medical forms.</p>
+
+        <h4>Key Components:</h4>
+        <ul>
+          <li><strong>Folder selection:</strong> Based on last digit of SSN.</li>
+          <li><strong>Patient identification data:</strong> Name, SSN, branch, blood type.</li>
+          <li><strong>Summary forms:</strong> SF 600, DD 2766, immunization records.</li>
+          <li><strong>DD Form 2005:</strong> Privacy Act statement.</li>
+          <li><strong>Occupational health data:</strong> Hearing tests, exposure forms.</li>
+          <li><strong>Computer-generated forms:</strong> EKGs, labs, radiology.</li>
+          <li><strong>SF 601:</strong> Immunization record.</li>
+          <li><strong>SF 603:</strong> Dental record.</li>
+          <li><strong>DD 2807-1:</strong> Report of Medical History.</li>
+          <li><strong>DD 2808:</strong> Report of Medical Examination.</li>
+          <li><strong>NAVMED 6150/4:</strong> Abstract of Service.</li>
+          <li><strong>OPNAV 5211/9:</strong> Disclosure accounting record.</li>
+        </ul>
+
+        <div class="youtube-wrapper">
+          <iframe src="https://www.youtube.com/embed/7m2p3uQ2YxA" allowfullscreen></iframe>
+        </div>
+      `
+    },
+
+    {
+      heading: "Patient Privacy & HIPAA",
+      html: `
+        <span class="badge">PQS 102.4</span>
+        <p>Patient privacy is governed by federal law and Navy policy.</p>
+
+        <h4>Key Terms:</h4>
+        <ul>
+          <li><strong>HIPAA:</strong> Protects patient health information.</li>
+          <li><strong>PII:</strong> Personally Identifiable Information.</li>
+          <li><strong>Privacy Act of 1974:</strong> Governs collection and use of personal data.</li>
+          <li><strong>Informed consent:</strong> Patient understands and agrees to treatment.</li>
+          <li><strong>Lawful consent:</strong> Consent obtained per legal requirements.</li>
+        </ul>
+
+        <div class="youtube-wrapper">
+          <iframe src="https://www.youtube.com/embed/2aQwKxJ8Q2s" allowfullscreen></iframe>
+        </div>
+      `
+    },
+
+    {
+      heading: "Common Medical Forms",
+      html: `
+        <span class="badge">PQS 102.5</span>
+        <p>These forms are used daily in Navy Medicine.</p>
+
+        <ul>
+          <li><strong>SF 600:</strong> Chronological Record of Medical Care.</li>
+          <li><strong>NAVMED 6150/2:</strong> Special Duty Medical Abstract.</li>
+          <li><strong>DD 2215:</strong> Reference Audiogram.</li>
+          <li><strong>DD 2808:</strong> Report of Medical Examination.</li>
+          <li><strong>DD 2807-1:</strong> Report of Medical History.</li>
+          <li><strong>NAVMED 6120/4:</strong> Periodic Health Assessment.</li>
+        </ul>
+
+        <div class="youtube-wrapper">
+          <iframe src="https://www.youtube.com/embed/0kYwG6lJx0A" allowfullscreen></iframe>
+        </div>
+      `
+    },
+
+    {
+      heading: "Parts of the Health Record",
+      html: `
+        <span class="badge">PQS 102.6</span>
+        <ul>
+          <li><strong>Part 1:</strong> Preventive Medicine & Occupational Health.</li>
+          <li><strong>Part 2:</strong> Medical Care & Treatment.</li>
+          <li><strong>Part 3:</strong> Physical Qualifications & Administrative Forms.</li>
+          <li><strong>Part 4:</strong> Ancillary Studies (labs, X-rays, EKGs).</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Closing a Health Record",
+      html: `
+        <span class="badge">PQS 102.7</span>
+        <p>Records are closed when a service member:</p>
+        <ul>
+          <li>Dies or is declared dead</li>
+          <li>Is discharged</li>
+          <li>Resigns</li>
+          <li>Is released from active duty</li>
+          <li>Retires</li>
+          <li>Transfers to Fleet Reserve</li>
+          <li>Is missing in action</li>
+          <li>Is declared a deserter</li>
+          <li>Is disenrolled from a program</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Electronic Health Record Systems (AHLTA/CHCS)",
+      html: `
+        <span class="badge">PQS 102.8–102.10</span>
+        <p>Electronic systems support documentation, ordering, and patient management.</p>
+
+        <h4>Basic Functions:</h4>
+        <ul>
+          <li>Demographics</li>
+          <li>Health history</li>
+          <li>Lab & radiology results</li>
+          <li>Clinical notes</li>
+          <li>Previous encounters</li>
+          <li>Vital signs</li>
+          <li>Order sets</li>
+          <li>Telephone consults</li>
+        </ul>
+
+        <div class="youtube-wrapper">
+          <iframe src="https://www.youtube.com/embed/5xGJtG6o9nU" allowfullscreen></iframe>
+        </div>
+      `
+    },
+
+    {
+      heading: "Physical Examinations & Qualifying Exams",
+      html: `
+        <span class="badge">PQS 102.11–102.13</span>
+        <p>Physical exams ensure medical readiness and suitability for duty.</p>
+
+        <h4>Types of Exams:</h4>
+        <ul>
+          <li>Overseas/Operational Screening</li>
+          <li>Periodic Health Assessment (PHA)</li>
+          <li>Special Duty (diving, aviation, submarine)</li>
+          <li>Occupational Health Surveillance</li>
+          <li>Separation/Retirement</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Healthcare Systems at Your Command",
+      html: `
+        <span class="badge">PQS 102.14</span>
+        <p>Common systems include:</p>
+        <ul>
+          <li>MRRS (Medical Readiness Reporting System)</li>
+          <li>AHLTA/CHCS</li>
+          <li>DENCAS (Dental)</li>
+          <li>CarePoint/MHSPHP</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "The Joint Commission & Navy Medicine Augmentation",
+      html: `
+        <span class="badge">PQS 102.15–102.16</span>
+        <p><strong>The Joint Commission</strong> accredits healthcare facilities and ensures quality and safety.</p>
+        <p><strong>Navy Medicine Augmentation Program</strong> provides medical personnel to operational units during contingencies.</p>
+      `
+    },
+
+    {
+      heading: "End-of-Block Quiz",
+      quiz: {
+        questions: [
+          {
+            text: "What does TDFS primarily organize?",
+            options: ["Dental records", "Medical records by last two digits of SSN", "Lab results", "Radiology files"],
+            correctIndex: 1
+          },
+          {
+            text: "Which form is the Chronological Record of Medical Care?",
+            options: ["SF 600", "DD 2808", "NAVMED 6150/4", "DD 2215"],
+            correctIndex: 0
+          },
+          {
+            text: "Which part of the health record contains immunizations?",
+            options: ["Part 1", "Part 2", "Part 3", "Part 4"],
+            correctIndex: 0
+          },
+          {
+            text: "Which system is used for medical readiness tracking?",
+            options: ["AHLTA", "MRRS", "DENCAS", "CHCS"],
+            correctIndex: 1
+          },
+          {
+            text: "What is HIPAA designed to protect?",
+            options: ["Financial data", "Personal preferences", "Health information", "Training records"],
+            correctIndex: 2
+          }
+        ]
       }
-    ]
-  },
+    }
+  ]
+},
   {
     id: "103",
     title: "103 — Medical Assessment Fundamentals",
