@@ -767,23 +767,267 @@ const modules = [
     }
   ]
 },
-  {
-    id: "104",
-    title: "104 — Military Medical Examinations Fundamentals",
-    level: "Fundamentals",
-    youtube: "https://www.youtube.com/embed/7Z2XRg5uZ0E",
-    description:
-      "Covers primary and secondary assessments, vital signs, physical exam systems, and normal vs abnormal findings.",
-    sections: [
-      {
-        heading: "Overview",
-        html: `
-          <p>This module focuses on the structure and components of military medical examinations, including primary/secondary assessments and system-based exams.</p>
-          <p>Content placeholder — expand with PQS-aligned details for 104.1–104.10.</p>
-        `
+{
+  id: "104",
+  title: "104 — Military Medical Examinations Fundamentals",
+  level: "Fundamentals",
+  youtube: "", // intentionally blank
+  description:
+    "Covers primary and secondary assessments, vital signs, environmental factors, orthostatic blood pressure, physical exam techniques, DCAP-BTLS, and normal vs abnormal findings across all major body systems.",
+  sections: [
+    {
+      heading: "Overview & Learning Objectives",
+      html: `
+        <p>By the end of this module, you will be able to:</p>
+        <ul>
+          <li>Perform a primary and secondary assessment.</li>
+          <li>Identify normal and abnormal vital signs.</li>
+          <li>Explain environmental factors affecting vital signs.</li>
+          <li>Obtain orthostatic blood pressure correctly.</li>
+          <li>Define inspection, auscultation, palpation, and percussion.</li>
+          <li>Apply DCAP-BTLS during trauma assessment.</li>
+          <li>Recognize normal and abnormal findings across major body systems.</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Primary Assessment",
+      html: `
+        <span class="badge">PQS 104.1</span>
+        <p>The primary assessment identifies immediate life threats.</p>
+        <h4>Steps:</h4>
+        <ul>
+          <li><strong>General impression:</strong> Patient appearance, distress, environment.</li>
+          <li><strong>Responsiveness:</strong> AVPU (Alert, Verbal, Pain, Unresponsive).</li>
+          <li><strong>Airway:</strong> Open, clear, maintainable.</li>
+          <li><strong>Breathing:</strong> Rate, depth, effort, chest rise.</li>
+          <li><strong>Circulation:</strong> Pulse, skin color/temp, major bleeding.</li>
+          <li><strong>Disability:</strong> Quick neuro check (LOC, pupils, movement).</li>
+          <li><strong>Expose:</strong> Expose only as needed for assessment.</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Secondary Assessment (DCAP-BTLS)",
+      html: `
+        <span class="badge">PQS 104.2</span>
+        <p>The secondary assessment is a head-to-toe exam used after life threats are addressed.</p>
+        <h4>DCAP-BTLS:</h4>
+        <ul>
+          <li><strong>D — Deformities</strong></li>
+          <li><strong>C — Contusions</strong></li>
+          <li><strong>A — Abrasions</strong></li>
+          <li><strong>P — Punctures/Penetrations</strong></li>
+          <li><strong>B — Burns</strong></li>
+          <li><strong>T — Tenderness</strong></li>
+          <li><strong>L — Lacerations</strong></li>
+          <li><strong>S — Swelling</strong></li>
+        </ul>
+        <p>Apply DCAP-BTLS to each body region during trauma assessment.</p>
+      `
+    },
+
+    {
+      heading: "Normal & Abnormal Vital Signs",
+      html: `
+        <span class="badge">PQS 104.3</span>
+        <h4>Normal Adult Vital Signs:</h4>
+        <ul>
+          <li><strong>Blood pressure:</strong> ~120/80 mmHg</li>
+          <li><strong>Respiratory rate:</strong> 12–20 breaths/min</li>
+          <li><strong>Pulse:</strong> 60–100 bpm</li>
+          <li><strong>Temperature:</strong> 98.6°F (37°C)</li>
+        </ul>
+        <h4>Abnormal Examples:</h4>
+        <ul>
+          <li><strong>Hypertension:</strong> >140/90</li>
+          <li><strong>Tachycardia:</strong> >100 bpm</li>
+          <li><strong>Bradypnea:</strong> <12 breaths/min</li>
+          <li><strong>Fever:</strong> >100.4°F (38°C)</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Environmental Factors Affecting Vital Signs",
+      html: `
+        <span class="badge">PQS 104.4</span>
+        <p>Vital signs can be influenced by environmental and situational factors.</p>
+        <ul>
+          <li><strong>Temperature:</strong> Heat increases pulse; cold lowers temperature.</li>
+          <li><strong>Stress:</strong> Raises pulse and blood pressure.</li>
+          <li><strong>Exercise:</strong> Increases pulse and respiratory rate.</li>
+          <li><strong>Altitude:</strong> Increases respiratory rate.</li>
+          <li><strong>Hydration:</strong> Dehydration increases heart rate.</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Orthostatic Blood Pressure",
+      html: `
+        <span class="badge">PQS 104.5</span>
+        <p>Orthostatic vitals assess for volume depletion or autonomic dysfunction.</p>
+        <h4>Procedure:</h4>
+        <ul>
+          <li>Have the patient lie supine for 1–3 minutes; record BP and pulse.</li>
+          <li>Have the patient sit; wait 1 minute; record BP and pulse.</li>
+          <li>Have the patient stand; wait 1 minute; record BP and pulse.</li>
+        </ul>
+        <h4>Positive Orthostatics:</h4>
+        <ul>
+          <li>Drop in systolic BP ≥20 mmHg</li>
+          <li>Drop in diastolic BP ≥10 mmHg</li>
+          <li>Increase in pulse ≥20 bpm</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Physical Examination Techniques",
+      html: `
+        <span class="badge">PQS 104.6</span>
+        <p>These are the four core techniques used during physical exams.</p>
+        <ul>
+          <li><strong>Inspection:</strong> Visual observation of appearance, movement, skin, posture.</li>
+          <li><strong>Auscultation:</strong> Listening with a stethoscope (heart, lungs, bowel sounds).</li>
+          <li><strong>Palpation:</strong> Using hands to feel for tenderness, masses, temperature.</li>
+          <li><strong>Percussion:</strong> Tapping to assess underlying structures (air, fluid, solid).</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "DCAP-BTLS Definitions",
+      html: `
+        <span class="badge">PQS 104.7</span>
+        <p>DCAP-BTLS is used to identify trauma-related abnormalities.</p>
+        <ul>
+          <li><strong>Deformities:</strong> Abnormal shape or alignment.</li>
+          <li><strong>Contusions:</strong> Bruising.</li>
+          <li><strong>Abrasions:</strong> Scrapes or superficial damage.</li>
+          <li><strong>Punctures/Penetrations:</strong> Holes or deep injuries.</li>
+          <li><strong>Burns:</strong> Thermal, chemical, or electrical injury.</li>
+          <li><strong>Tenderness:</strong> Pain on palpation.</li>
+          <li><strong>Lacerations:</strong> Cuts or tears in tissue.</li>
+          <li><strong>Swelling:</strong> Edema or inflammation.</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Physical Examination Components",
+      html: `
+        <span class="badge">PQS 104.8</span>
+        <p>These systems are assessed during a complete physical exam.</p>
+        <ul>
+          <li><strong>Vital Signs</strong></li>
+          <li><strong>General Appearance</strong></li>
+          <li><strong>HEENT</strong> (Head, Eyes, Ears, Nose, Throat)</li>
+          <li><strong>Cardiovascular</strong></li>
+          <li><strong>Pulmonary</strong></li>
+          <li><strong>Abdominal</strong></li>
+          <li><strong>Genitourinary</strong></li>
+          <li><strong>Musculoskeletal</strong></li>
+          <li><strong>Dermatological</strong></li>
+          <li><strong>Neurological</strong></li>
+          <li><strong>Dental</strong></li>
+          <li><strong>Endocrine</strong></li>
+          <li><strong>Mental Health</strong></li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Normal Assessment Findings",
+      html: `
+        <span class="badge">PQS 104.9</span>
+        <p>Examples of normal findings by system:</p>
+        <ul>
+          <li><strong>General:</strong> Alert, oriented, no distress.</li>
+          <li><strong>HEENT:</strong> Pupils equal/reactive, clear tympanic membranes.</li>
+          <li><strong>Cardiovascular:</strong> Regular rate/rhythm, no murmurs.</li>
+          <li><strong>Pulmonary:</strong> Clear breath sounds bilaterally.</li>
+          <li><strong>Abdominal:</strong> Soft, non-tender, normal bowel sounds.</li>
+          <li><strong>GI/GU:</strong> No masses, no CVA tenderness.</li>
+          <li><strong>Musculoskeletal:</strong> Full range of motion, no deformities.</li>
+          <li><strong>Dermatological:</strong> Warm, dry, intact skin.</li>
+          <li><strong>Neurological:</strong> Normal strength, sensation, reflexes.</li>
+          <li><strong>Dental:</strong> No cavities or gum disease.</li>
+          <li><strong>Endocrine:</strong> No signs of thyroid enlargement.</li>
+          <li><strong>Mental Health:</strong> Appropriate mood and affect.</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "Abnormal Assessment Findings",
+      html: `
+        <span class="badge">PQS 104.10</span>
+        <p>Examples of abnormal findings by system:</p>
+        <ul>
+          <li><strong>General:</strong> Lethargy, diaphoresis, distress.</li>
+          <li><strong>HEENT:</strong> Unequal pupils, ear discharge, swollen tonsils.</li>
+          <li><strong>Cardiovascular:</strong> Irregular rhythm, murmurs, weak pulses.</li>
+          <li><strong>Pulmonary:</strong> Wheezes, crackles, diminished breath sounds.</li>
+          <li><strong>Abdominal:</strong> Guarding, rigidity, rebound tenderness.</li>
+          <li><strong>GI/GU:</strong> Hematuria, masses, severe flank pain.</li>
+          <li><strong>Musculoskeletal:</strong> Deformities, swelling, limited ROM.</li>
+          <li><strong>Dermatological:</strong> Rashes, lesions, cyanosis.</li>
+          <li><strong>Neurological:</strong> Weakness, numbness, slurred speech.</li>
+          <li><strong>Dental:</strong> Caries, abscesses, gum inflammation.</li>
+          <li><strong>Endocrine:</strong> Goiter, unexplained weight changes.</li>
+          <li><strong>Mental Health:</strong> Hallucinations, suicidal ideation.</li>
+        </ul>
+      `
+    },
+
+    {
+      heading: "End-of-Block Quiz",
+      quiz: {
+        questions: [
+          {
+            text: "Which step is part of the primary assessment?",
+            options: [
+              "Checking bowel sounds",
+              "Assessing airway patency",
+              "Performing DCAP-BTLS",
+              "Testing reflexes"
+            ],
+            correctIndex: 1
+          },
+          {
+            text: "Which of the following is included in DCAP-BTLS?",
+            options: ["Dizziness", "Contusions", "Cyanosis", "Clubbing"],
+            correctIndex: 1
+          },
+          {
+            text: "A normal adult respiratory rate is:",
+            options: ["6–10", "12–20", "20–30", "30–40"],
+            correctIndex: 1
+          },
+          {
+            text: "A drop in systolic BP of 20 mmHg when standing indicates:",
+            options: [
+              "Hypertension",
+              "Orthostatic change",
+              "Normal variation",
+              "Cardiac arrest"
+            ],
+            correctIndex: 1
+          },
+          {
+            text: "Crackles heard in the lungs are considered:",
+            options: ["Normal", "Abnormal", "Unrelated", "Gastrointestinal"],
+            correctIndex: 1
+          }
+        ]
       }
-    ]
-  },
+    }
+  ]
+},
 
   // You would continue adding modules for 105–110, 201, 301–303 similarly:
   {
